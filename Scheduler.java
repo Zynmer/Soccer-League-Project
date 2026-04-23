@@ -18,7 +18,7 @@ class Scheduler {
 
     }
     // Logic for consecuative cold days that end the season
-    public boolean Week(double temp) {
+    public boolean Temp(double temp) {
 
         if (temp > TempHotLimit) TempHotLimit = temp;
 

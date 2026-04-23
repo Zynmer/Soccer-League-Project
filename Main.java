@@ -40,7 +40,7 @@ public class Main {
 
             switch (choice) {
 
-                case 0 -> Week(scheduler);
+                case 0 -> Temp(scheduler);
                 case 1 -> showTeams(scheduler);
                 case 2 -> showGames(scheduler);
                 default -> {return;}
@@ -49,14 +49,14 @@ public class Main {
         }    
     }
 
-    static void Week(Scheduler scheduler) {
+    static void Temp(Scheduler scheduler) {
 
         String input = JOptionPane.showInputDialog("Enter temperature: ");
 
         try {
 
             double temp = Double.parseDouble(input);
-            boolean cont = scheduler.Week(temp);
+            boolean cont = scheduler.Temp(temp);
 
             if (!cont) {
 
